@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include smarttob *.css
+recursive-include smarttob *.csv
+recursive-include smarttob *.html
+recursive-include smarttob *.ico
+recursive-include smarttob *.js
+recursive-include smarttob *.json
+recursive-include smarttob *.md
+recursive-include smarttob *.png
+recursive-include smarttob *.py
+recursive-include smarttob *.svg
+recursive-include smarttob *.txt
+recursive-exclude smarttob *.pyc
