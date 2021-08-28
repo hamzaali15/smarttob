@@ -97,6 +97,13 @@ app_license = "MIT"
 #	}
 # }
 
+doc_events = {
+	"BOM": {
+		"before_update_after_submit": "smarttob.hook_events.bom.calculate_costing",
+		"validate": "smarttob.hook_events.bom.calculate_costing"
+	}
+}
+
 # Scheduled Tasks
 # ---------------
 
