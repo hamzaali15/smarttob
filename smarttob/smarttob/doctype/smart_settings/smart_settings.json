@@ -10,14 +10,15 @@
  "fields": [
   {
    "fieldname": "expense_account",
-   "fieldtype": "Data",
-   "label": "Expense Account"
+   "fieldtype": "Link",
+   "label": "Expense Account",
+   "options": "Account"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2021-09-01 15:44:04.749105",
+ "modified": "2021-09-02 12:55:02.807411",
  "modified_by": "Administrator",
  "module": "Smarttob",
  "name": "SMART Settings",

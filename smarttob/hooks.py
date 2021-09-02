@@ -105,7 +105,8 @@ doc_events = {
 	"Stock Entry": {
 		# "onload": "smarttob.hook_events.bom.add_expense_account",
 		# "refresh": "smarttob.hook_events.bom.add_expense_account",
-		"validate": "smarttob.hook_events.bom.add_expense_account"
+		# "before_save": "smarttob.hook_events.bom.add_expense_account",
+		"validate": "smarttob.hook_events.bom.add_expense_account",
 	}
 }
 
