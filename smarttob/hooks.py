@@ -107,6 +107,9 @@ doc_events = {
 		# "refresh": "smarttob.hook_events.bom.add_expense_account",
 		# "before_save": "smarttob.hook_events.bom.add_expense_account",
 		"validate": "smarttob.hook_events.bom.add_expense_account",
+	},
+	"Sales Invoice": {
+		"validate": "smarttob.hook_events.utlis.cal_amount",
 	}
 }
 
