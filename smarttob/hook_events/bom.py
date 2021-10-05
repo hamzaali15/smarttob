@@ -15,13 +15,16 @@ def add_expense_account(self, method):
 			if self.from_bom == 1:
 				# doc_name = frappe.get_value('Work Order', self.bom_no, 'name')
 				indirect_total_cost = frappe.db.get_value("Work Order", self.work_order, 'indirect_total_cost')
+				qty = frappe.db.get_value("Work Order", self.work_order, 'qty')
 				smart_settings = frappe.get_single('SMART Settings')
 				if not smart_settings.expense_account:
 					frappe.throw("Please Set Expense Account in SMART Settings")
+				indirect_total = 0
 				if indirect_total_cost:
+					indirect_total = indirect_total_cost * qty
 					self.append('additional_costs', {
 						'expense_account': smart_settings.expense_account,
 						'description': "Overheads Cost",
-						'amount': indirect_total_cost
+						'amount': indirect_total
 						})
-					self.total_additional_costs += indirect_total_cost
+					self.total_additional_costs += indirect_total
