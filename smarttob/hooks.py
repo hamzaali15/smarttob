@@ -103,9 +103,6 @@ doc_events = {
 		"validate": "smarttob.hook_events.bom.calculate_costing"
 	},
 	"Stock Entry": {
-		# "onload": "smarttob.hook_events.bom.add_expense_account",
-		# "refresh": "smarttob.hook_events.bom.add_expense_account",
-		# "before_save": "smarttob.hook_events.bom.add_expense_account",
 		"validate": "smarttob.hook_events.bom.add_expense_account",
 	},
 	"Sales Invoice": {
