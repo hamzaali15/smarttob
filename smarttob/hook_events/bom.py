@@ -8,6 +8,7 @@ def calculate_costing(self, method):
 	self.db_update()
 
 def add_expense_account(self, method):
+	self.total_additional_costs = 0
 	self.set('additional_costs', [])
 	if self.stock_entry_type == "Manufacture":
 		if self.from_bom == 1:
