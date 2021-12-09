@@ -96,7 +96,7 @@
    "label": "Rent Cost",
    "length": 0,
    "mandatory_depends_on": null,
-   "modified": "2021-08-23 11:49:47.188692",
+   "modified": "2021-12-09 12:49:47.188692",
    "modified_by": "Administrator",
    "name": "BOM-rent_cost",
    "no_copy": 0,
